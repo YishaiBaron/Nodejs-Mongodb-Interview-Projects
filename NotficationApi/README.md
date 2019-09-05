@@ -1,10 +1,6 @@
 
- ```
 * Install `express` , `body-parser` and `mongoose` package   
-Command:
-```
-npm i -s express body-parser mongoose
-```
+Command: ```npm i -s express body-parser mongoose ```
 * Add a new file named `app.js` that will contain all the code
 * edit this part in `package.json` file:
 ```json
@@ -18,7 +14,7 @@ npm i -s express body-parser mongoose
 
 ## POST request
 ```
-curl -v -X POST -H "Content-type: application/json" -d  "{\"name\": \"milk\",\"price\":16}" localhost:3000/api/products
+curl -v -X POST -H "Content-type: application/json" -d  "{\"name\": \"milk\",\"color\":7C3333}" localhost:3000/api/products
 ```
 
 ```
@@ -36,7 +32,7 @@ curl -v -X POST -H "Content-type: application/json" -d  "{\"name\": \"milk\",\"p
 < Content-Type: application/json; charset=utf-8
 < Content-Length: 59
 < ETag: W/"3b-opV/1RMdy2ko4dyKG5Dk8yTYIAY"
-< Date: Mon, 15 Oct 2018 17:29:39 GMT
+< Date: Thu, 05 Sep 2019 14:40:50 GMT
 < Connection: keep-alive
 <
 {"_id":"5bc4ce833952a622ec051ab2","name":"Rod","color":#FF0000}* Connection #0 to host localhost left intact
@@ -55,12 +51,13 @@ curl -v -X GET localhost:3000/api/products
 < HTTP/1.1 200 OK
 < X-Powered-By: Express
 < Content-Type: application/json; charset=utf-8
-< Content-Length: 205
-< ETag: W/"cd-wRzKh9YInufaBU4TXUuXFMNmxrA"
-< Date: Mon, 15 Oct 2018 17:43:51 GMT
+< Content-Length: 306
+< ETag: W/"132-JrSClhUrb62y3PAYmL6dqvjJcXc"
+< Date: Thu, 05 Sep 2019 14:43:54 GMT
 < Connection: keep-alive
 <
-[{"_id":"5bc4ce833952a622ec051ab2","name":"Rob","color":FF0000,"__v":0},{"_id":"5bc4cf893952a622ec051ab4","name":"Rob","color":FFFFFF,"__v":0},{"_id":"5bc4cf943952a622ec051ab5","name":"Rob","color":FFFFFF,"__v":0}]*
+[{"_id":"5d710690e8c0084c688c0536","name":"asdssss","color":"#0000a0","__v":0},{"_id":"5d7109bae8c0084c688c0537","name":"rtgdfg","color":"#800000","__v":0},{"_id":"5d7109c1e8c0084c688c0538","name":"dffe","color":"#80ff80","__v":0},{"_id":"5d711e72f7298f1ddcd2d297","name":"milk","color":"#7C3333","__v":0}]
+
 ```
 
 ## PUT request
@@ -81,7 +78,7 @@ curl -v -X PUT -H "Content-type: application/json" -d  "{\"name\": \"water\",\"c
 < Content-Type: application/json; charset=utf-8
 < Content-Length: 68
 < ETag: W/"44-GxiMz0s89gBv00bDDgnfyBIdYvk"
-< Date: Mon, 15 Oct 2018 17:53:21 GMT
+< Date: Thu, 05 Sep 2019 14:45:51 GMT
 < Connection: keep-alive
 <
 {"_id":"5bc4ce833952a622ec051ab2","name":"water","color":FFFFFF,"__v":0}* Connection #0 to host localhost left intact
@@ -98,7 +95,7 @@ curl -v -X DELETE localhost:3000/api/products?id=5bc4ce833952a622ec051ab2
 >
 < HTTP/1.1 204 No Content
 < X-Powered-By: Express
-< Date: Mon, 15 Oct 2018 17:58:05 GMT
+< Date: Thu, 05 Sep 2019 14:47:34 GMT
 < Connection: keep-alive
 <
 * Connection #0 to host localhost left intact
