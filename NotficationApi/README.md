@@ -2,13 +2,7 @@
 * Install `express` , `body-parser` and `mongoose` package   
 Command: ```npm i -s express body-parser mongoose ```
 * Add a new file named `app.js` that will contain all the code
-* edit this part in `package.json` file:
-```json
-"scripts": {
-    "start":"node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
-```
+
 
 # TEST THE NODE SERVER WITH `curl`
 
